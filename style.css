@@ -1,7 +1,7 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -15,8 +15,12 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     width: 360px;
-    height: 450px;
+    height: 460px;
     border-radius: 1px;
     padding: 0px;
     background-color: #ffffff;
@@ -43,8 +47,10 @@ header p {
 }
 
 footer {
-    padding: 10px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
 }
 
 .lists {
@@ -55,21 +61,57 @@ footer {
 .list {
     display: flex;
     flex-direction: row;
+    gap: 16px;
+    margin: 5px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 5px;
+    gap: 4px;
+}
+
+.text p {
+    color: #bfbfbf;
+    font-size: 9px;
+    font-weight: 400;
+}
+
+.text span {
+    color: black;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.direction-icon {
+    width: 15px;
+    height: 15px;
 }
 
 .street {
-    width: 780px;
-    height: 100px;
+    width: 350px;
+    height: 80px;
+    position: relative;
+    left: 20px;
 }
 
-.box {
-    background-color: #4677f6;
-    color: #ffffff;
-    width: 20px;
-    height: 10px;
+.overlay {
+    position: relative;
+    display: flex;
+    background-image: linear-gradient(
+        rgba(10, 30, 100, 0.4), /* very deep semi-transparent blue */
+        rgba(10, 30, 100, 0.4)
+      ),
+    url(./img/map.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    width: 370px;
+    height: 110px;
+    padding: 24px;
+    bottom: 400px;
+    right: 4px;
+    border-radius: 4px;
 }
-
-/*
-position: absolute; top: Xpx; left: 50%; transform: translateX(-50%)
-Head northeast on Plan forward Bergstrasse
-*/

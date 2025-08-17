@@ -23,6 +23,7 @@ body {
     height: 460px;
     border-radius: 2px;
     padding: 0px;
+    margin: auto;
     background-color: #ffffff;
 }
 
@@ -115,11 +116,11 @@ footer {
 }
 
 .image-2 {
-  position: relative;   /* this keeps marker inside */
+  position: relative;   
   width: 325px;
   height: 70px;
   left: 10px;
-  margin-top: 10px;     /* use margin, not top */
+  margin-top: 10px;     
 }
 
 .street {
@@ -142,11 +143,11 @@ footer {
 }
 
 .overlay {
-    position: absolute; 
-    top: 115px;          
-    left: 50%;
+    position: relative; 
+    top: -400px;          
+    left: 48%;
     transform: translateX(-50%);
-    width: 380px;
+    width: 375px;
     height: 100px;
     padding: 24px;
     border-radius: 4px;
@@ -232,7 +233,7 @@ footer {
 
 .box {
     position: absolute; 
-    top: 200px;        
+    top: 155px;        
     left: 58%;
     transform: translateX(-50%);
     width: 100px;

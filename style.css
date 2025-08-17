@@ -56,7 +56,7 @@ header p {
 footer {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 27px;
 }
 
 .word {
@@ -115,49 +115,49 @@ footer {
 }
 
 .image-2 {
-    margin-top: -12px;
+  position: relative;   /* this keeps marker inside */
+  width: 325px;
+  height: 70px;
+  left: 10px;
+  margin-top: 10px;     /* use margin, not top */
 }
 
 .street {
-    position: relative;
-    top: 20px;
-    width: 325px;
-    height: 70px;
-    position: relative;
-    left: 10px;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-    z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  z-index: 1;
+  display: block;
+  margin-top: -10px;
 }
 
 .marker-icon {
-    width: 30px;
-    height: 30px;
-    color: black;
-    z-index: 2;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  left: 4px;
+  top: 38px; /* now positions inside street-wrapper */
 }
 
 .overlay {
-    position: relative;
-    display: flex;
-    background-image: linear-gradient(
-        rgb(106, 143, 237, 0.7), /* very deep semi-transparent blue */
-        rgb(106, 143, 237, 0.7)
-      ),
-    url(./img/map.png);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
+    position: absolute; /* changed from relative */
+    top: 115px;          /* distance from top of screen */
+    left: 50%;
+    transform: translateX(-50%);
     width: 380px;
-    height: 110px;
+    height: 100px;
     padding: 24px;
-    bottom: 410px;
-    right: 8px;
     border-radius: 4px;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.35);
-    z-index: 1; 
-    gap: 10px;
+    background-image: linear-gradient(
+        rgba(106, 143, 237, 0.7),
+        rgba(106, 143, 237, 0.7)
+    ), url(./img/map.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 10; /* high z-index to stay above container */
 }
 
 .first {
@@ -174,8 +174,8 @@ footer {
 .line {
     flex: 1;                      
     height: 1px;                  
-    background-color: #ffffff;    /* line color */
-    position: relative;           /* so we can place the car on it */
+    background-color: #ffffff;    
+    position: relative;           
 }
 
 .car-icon {
@@ -193,9 +193,9 @@ footer {
     background: linear-gradient(
         to right,
         rgba(255, 255, 255, 1) 0%,     /* solid white */
-        rgba(255, 255, 255, 1) 40%,    /* stays solid white until 40% */
-        rgba(255, 255, 255, 0.5) 40%,  /* start fading after 40% */
-        rgba(255, 255, 255, 0.5) 100%  /* faded white till the end */
+        rgba(255, 255, 255, 1) 30%,    /* stays solid white until 40% */
+        rgba(255, 255, 255, 0.6) 30%,  /* start fading after 40% */
+        rgba(255, 255, 255, 0.6) 100%  /* faded white till the end */
     );
     position: relative;
     border-radius: 5px;
@@ -231,20 +231,19 @@ footer {
 }
 
 .box {
-    position: absolute;
+    position: absolute; /* changed from relative */
+    top: 200px;        /* adjust to be below overlay */
+    left: 67%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 32px;
+    background-color: #4677f6;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    background-color: #4677f6;
-    bottom: 400px;
-    left: 370px;
-    width: 100px;
-    height: 32px;
     gap: 3px;
-    border-radius: 5px;
-    padding: 3px 5px;
-    z-index: 2; 
+    z-index: 11;
     cursor: pointer;
 }
 

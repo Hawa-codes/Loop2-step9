@@ -1,5 +1,5 @@
 # loop2step9
-*An implementation of Smartphone frame design with HTML/CSS*
+*An implementation of Route Info Card with HTML/CSS*
 
 ## Getting Started
 Clone or download this repository and run with a local server of open index.html with your favorite browser
@@ -8,7 +8,7 @@ Clone or download this repository and run with a local server of open index.html
 - Your browser version must be recent for a better experience
 
 ## Features
-- Smartphone frame design
+- Route Info Card
 
 ## Tech/framework used
 - HTML

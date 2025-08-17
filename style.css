@@ -143,12 +143,12 @@ footer {
 }
 
 .overlay {
-    position: relative; 
-    top: -400px;          
+    position: absolute; 
+    top: 115px;          
     left: 50%;
     transform: translateX(-50%);
-    width: 375px;
-    height: 100px;
+    width: 380px;
+    height: 110px;
     padding: 24px;
     border-radius: 4px;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.35);
@@ -160,7 +160,6 @@ footer {
     background-position: center;
     z-index: 10; 
 }
-
 .first {
     display: flex;
     flex-direction: row;
@@ -233,7 +232,7 @@ footer {
 
 .box {
     position: absolute; 
-    top: 155px;        
+    top: 210px;        
     left: 58%;
     transform: translateX(-50%);
     width: 100px;
@@ -258,3 +257,4 @@ footer {
     font-size: 10px;
     font-weight: bold;
 }
+

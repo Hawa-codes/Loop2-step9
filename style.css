@@ -138,12 +138,12 @@ footer {
   height: 20px;
   z-index: 2;
   left: 4px;
-  top: 38px; /* now positions inside street-wrapper */
+  top: 38px; 
 }
 
 .overlay {
-    position: absolute; /* changed from relative */
-    top: 115px;          /* distance from top of screen */
+    position: absolute; 
+    top: 115px;          
     left: 50%;
     transform: translateX(-50%);
     width: 380px;
@@ -157,7 +157,7 @@ footer {
     ), url(./img/map.png);
     background-size: cover;
     background-position: center;
-    z-index: 10; /* high z-index to stay above container */
+    z-index: 10; 
 }
 
 .first {
@@ -231,9 +231,9 @@ footer {
 }
 
 .box {
-    position: absolute; /* changed from relative */
-    top: 200px;        /* adjust to be below overlay */
-    left: 67%;
+    position: absolute; 
+    top: 200px;        
+    left: 58%;
     transform: translateX(-50%);
     width: 100px;
     height: 32px;

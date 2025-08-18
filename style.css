@@ -241,8 +241,7 @@ footer {
 .box {
     position: absolute; 
     top: 155px;        
-    left: 78%;
-    transform: translateX(-50%);
+    left: 67%;
     width: 100px;
     height: 32px;
     background-color: #4677f6;
